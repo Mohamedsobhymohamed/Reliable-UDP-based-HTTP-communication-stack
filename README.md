@@ -51,11 +51,11 @@ python udp_http_client_gbn.py --loss 0.1 --corrupt 0.1
 python tcp_udp_proxy.py
 Then visit http://localhost:9090/index.html in your browser. This redirects browser requests to the UDP HTTP server.
 
-🧪 Test Automation
+## 🧪 Test Automation
 Use the test_runner.py to automate and evaluate the server-client interaction under packet loss and corruption.
 
 python test_runner.py
-⚙️ Features
+## ⚙️ Features
 Simulates reliable data transfer with:
 
 Checksums
@@ -74,18 +74,18 @@ Proxy server bridges TCP and UDP for browser testing
 
 Wireshark-compatible .pcapng capture for packet analysis
 
-🧰 Configurable Parameters
+## 🧰 Configurable Parameters
 Parameter	Description	Default
 --loss	Packet loss probability (0.0–1.0)	0.1
 --corrupt	Packet corruption probability	0.1
 
-📡 Packet Capture
+## 📡 Packet Capture
 Use tcp_over_udp_http_capture.pcapng to analyze communication in tools like Wireshark.
 
-📄 License
+## 📄 License
 This project is provided for educational purposes and is released under the MIT License.
 
-🙌 Acknowledgments
+## 🙌 Acknowledgments
 Inspired by networking labs and reliable transport protocol simulations. Implements core networking concepts like:
 
 Stop-and-Wait ARQ
